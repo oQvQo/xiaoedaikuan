@@ -6,6 +6,7 @@ import bankLiushuiRoter from './bankLiushui' //财务管理
 import productFactoryRoter from './productFactory' //产品工厂
 import loansRoter from './loans' //产品工厂
 import SystemManagement from './SystemManagement'//系统管理
+import EarlyWarning from './EarlyWarning'//贷后预警
 
 // 催收管理
 import Cjilu from '../views/Cuishoujilu.vue'
@@ -78,6 +79,7 @@ const router = new VueRouter({
     ...productFactoryRoter,
     ...loansRoter,
     ...SystemManagement,
+    ...EarlyWarning,
     { path: '/*', redirect: '/homePage' }
   ]
 })
