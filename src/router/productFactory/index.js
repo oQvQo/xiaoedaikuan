@@ -1,0 +1,46 @@
+//产品工厂
+export default [
+	//贷款材料管理
+	{
+		path:'/cailiaoguanli',
+		component:()=>import('../../views/productFactory/cailiaoguanli')
+	},
+	{
+		path:'/adddaikuancailiao',
+		component:()=>import('../../views/productFactory/cailiaoguanli/add')
+	},
+	//贷款产品管理
+	{
+		path:'/chanpinguanli',
+		component:()=>import('../../views/productFactory/chanpinguanli')
+	},
+	{
+		path:'/chanpinbianji',
+		component:()=>import('../../views/productFactory/chanpinguanli/bianji')
+	},
+	{
+		path:'/addchanpin',
+		component:()=>import('../../views/productFactory/chanpinguanli/add')
+	},
+	//贷款产品审核
+	{
+		path:'/chanpinshenhe',
+		component:()=>import('../../views/productFactory/chanpinshenhe')
+	},
+	//合同模板管理
+	{
+		path:'/hetongmuban',
+		component:()=>import('../../views/productFactory/hetongmuban')
+	},
+	//准入授信管理
+	{
+		path:'/shouxinguanli',
+		component:()=>import('../../views/productFactory/shouxinguanli')
+	},
+	//准入授信管理查看
+	{
+		path:'/shouxinguanlichakan',
+		component:()=>import('../../views/productFactory/shouxinguanli/chakan')
+	},
+
+]
