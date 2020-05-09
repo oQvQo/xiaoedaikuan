@@ -742,7 +742,9 @@ export default {
       input21: "",
       input22: "",
       input23: "",
-
+      textarea:"",
+      checked:"",
+      
       imageUrl: "",
       imageUrl2: ""
     };
