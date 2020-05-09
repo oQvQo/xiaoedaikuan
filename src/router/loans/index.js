@@ -16,6 +16,10 @@ export default [
 		path: '/lilvbiangeng',
 		component: () => import('../../views/loans/daihou/lilvbiangeng')
 	},
+	{
+		path: '/lilvbiangengshw',
+		component: () => import('../../views/loans/daihou/lilvbiangeng/show')
+	},
 	//提前还款办理
 	{
 		path: '/tiqianhuankuan',

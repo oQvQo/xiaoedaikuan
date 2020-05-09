@@ -40,6 +40,7 @@
 			<el-table-column prop="caozuo" label="操作" width="180">
 			</el-table-column>
 		</el-table>
+		<TabBar></TabBar>
 	</div>
 </template>
 
