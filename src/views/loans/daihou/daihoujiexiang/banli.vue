@@ -4,6 +4,9 @@
     <div>
       <table>
         <tr>
+          <td colspan="2">可对该贷款进行评分，有利于用户在平台的信用等级评估</td>
+        </tr>
+        <tr>
           <td>评分：</td>
           <td>
             <div class="pf">
@@ -36,7 +39,14 @@
         <tr>
           <td>结项描述:</td>
           <td>
-            <el-input type="textarea" :rows="2" placeholder="请输入内容" v-model="textarea"></el-input>
+            <el-input type="textarea" :rows="2" placeholder="最多可输入200字" v-model="textarea"></el-input>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <el-button type="info">提交结项</el-button>
+            <el-button type="info">返回</el-button>
           </td>
         </tr>
       </table>
@@ -239,7 +249,7 @@
 export default {
   data() {
     return {
-      textarea: "该笔贷款还款记录很好，没有出现逾期情况",
+      textarea: "",
       tableData: [
         {
           date: "1", //期限
