@@ -6,6 +6,11 @@ export default [
 		path: '/daihoujiancha',
 		component: () => import('../../views/loans/daihou/daihoujiancha')
 	},
+	//贷后结项
+	{
+		path: '/daihoujiexiang',
+		component: () => import('../../views/loans/daihou/daihoujiexiang')
+	},
 	//贷款结项
 	{
 		path: '/daikuanjiexiang',
