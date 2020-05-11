@@ -34,6 +34,10 @@ export default [
 		path: '/tiqianhuankuan',
 		component: () => import('../../views/loans/daihou/tiqianhuankuan')
 	},
+	{
+		path: '/tiqianhuankuanchakan',
+		component: () => import('../../views/loans/daihou/tiqianhuankuan/chakan')
+	},
 	//还款管理
 	{
 		path: '/querenhuankuan',
