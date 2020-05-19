@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>Prod_id,prod_Name,prod_dEsc</p>
+<script>
+    var input ="Prod_id,prod_Name,prod_dEsc";
+    var a=input.toLowerCase();
+    console.log(a);
+    var i=a.split(",");
+    console.log(i);
+    var b=[];
+    for(var k=0;k< i.length;k++){
+        b=i[k].replace("_"," ");
+        b = b.replace(/^(.{5})([a-z])/,(e,s,b)=>s+b.toUpperCase())
+        console.log(b);
+    }
+    for(var j=0;j< i.length;j++){
+        b=i[j].replace("_","");
+        b = b.replace(/^(.{4})([a-z])/,(e,s,b)=>s+b.toUpperCase())
+        console.log(b);
+    }
+    var index="";
+    for(c in i){
+        index=c;
+        console.log(index);
+    }
+</script>
+</body>
+</html>

@@ -1,5 +1,6 @@
+<!-- 提前还款查看 -->
 <template>
-  <div class>
+  <div>
     <div class="zuo">提前还款</div>
     <div class="clear">
       <ul class="clear ul you">
@@ -529,15 +530,15 @@ export default {
 #fhui {
   background-color: #fff;
   color: #333;
-  padding: 10px 20px;
-  margin: 0 10px;
-  border: #ccc 1px solid;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  border: #ccc 0.1rem solid;
 }
 #dyin {
-  margin-left: 30px;
+  margin-left: 3rem;
 }
 .ul li {
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   background-color: #333334;
   color: #fff;
   position: relative;
@@ -548,35 +549,34 @@ export default {
 }
 .span {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   background-color: #fff;
   color: #333;
   text-align: center;
   position: absolute;
-  top: 12px;
-  left: 60px;
+  top: 1.2rem;
+  left: 6.5rem;
   z-index: 99;
 }
 .subtitle {
   text-align: center;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem;
 }
 .input {
   width: 80%;
 }
 .table tr td {
-  /* margin: 10px; */
-  padding: 10px;
+  padding: 1rem;
 }
 .table th {
   background-color: #cccccc;
-  padding: 10px;
+  padding: 1rem;
 }
-.div{
-    border-bottom:solid #cccccc 1px;
-    margin: 10px 0 20px 0;
+.div {
+  border-bottom: solid #cccccc 0.1rem;
+  margin: 1rem 0 2rem 0;
 }
 </style>

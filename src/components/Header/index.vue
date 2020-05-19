@@ -1,3 +1,4 @@
+<!-- 头部吧 -->
 <template>
 	<div class="header">
 		<i class="el-icon-s-home"></i><span>首页</span><span>{{title}}</span>

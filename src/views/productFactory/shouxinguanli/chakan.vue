@@ -1,3 +1,4 @@
+<!-- 授信管理查看 -->
 <template>
   <div>
     <el-menu
@@ -319,26 +320,10 @@
       <tr>
         <td>身份证正/反面</td>
         <td>
-          <!-- <el-upload
-            class="avatar-uploader"
-            action="https://jsonplaceholder.typicode.com/posts/"
-            :show-file-list="false"
-            :on-success="handleAvatarSuccess"
-            :before-upload="beforeAvatarUpload"
-          >-->
           <img v-if="imageUrl" :src="imageUrl" class="avatar" />
           <i v-else class="el-icon-plus avatar-uploader-icon"></i>
-          <!-- </el-upload> -->
-          <!-- <el-upload
-            class="avatar-uploader"
-            action="https://jsonplaceholder.typicode.com/posts/"
-            :show-file-list="false"
-            :on-success="handleAvatarSuccess"
-            :before-upload="beforeAvatarUpload"
-          >-->
           <img v-if="imageUrl2" :src="imageUrl2" class="avatar" />
           <i v-else class="el-icon-plus avatar-uploader-icon"></i>
-          <!-- </el-upload> -->
         </td>
         <td>手持身份证</td>
         <td>
@@ -356,7 +341,6 @@
         <td></td>
         <td></td>
       </tr>
-
       <tr>
         <th colspan="4">银行信息</th>
       </tr>
@@ -464,7 +448,6 @@
         <li>&nbsp;</li>
       </ul>
     </div>
-
     <TabBar></TabBar>
   </div>
 </template>

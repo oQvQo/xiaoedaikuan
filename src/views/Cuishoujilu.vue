@@ -1,5 +1,6 @@
+<!-- 催收记录 -->
 <template>
-	<div class="cuishoujilu sgun">
+	<div class="cuishoujilu sgun">	
 		<div class="top">
 			<img src="../../public/cuishouimage/1.png">
 			<span>首页/催收管理/催收记录</span>

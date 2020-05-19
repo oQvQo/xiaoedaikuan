@@ -1,3 +1,4 @@
+<!-- 产品审核 -->
 <template>
 	<div>
 		<el-select v-model="value" placeholder="贷款类型">

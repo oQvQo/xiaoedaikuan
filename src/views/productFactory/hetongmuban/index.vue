@@ -1,8 +1,11 @@
+<!-- 合同模板 -->
 <template>
   <div>
     <el-input v-model="input" placeholder="合同编号" class="el-input"></el-input>
-    <el-button type="info">搜索</el-button>
-    <el-button type="info">新增</el-button>
+    <el-button type="info" @click="open">搜索</el-button>
+    <el-button type="info">
+      <router-link to="/addhetongmuban">新增</router-link>
+    </el-button>
     <div class="div">
       <p>数据列表</p>
       <el-table
@@ -36,6 +39,7 @@
   </div>
 </template>
 <script>
+
 export default {
   data() {
     return {
@@ -63,7 +67,12 @@ export default {
     },
     handleCurrentChange(val) {
       console.log(`当前页: ${val}`);
-    }
+    },
+    open() {
+        this.$alert('这是一段内容', '标题名称', {
+          confirmButtonText: '确定',
+        });
+      }
   }
 };
 </script>

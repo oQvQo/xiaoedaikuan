@@ -1,3 +1,4 @@
+<!-- 产品管理-编辑 -->
 <template>
 	<div>
 		<el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
@@ -12,12 +13,10 @@
 			</el-form-item>
 			<el-form-item label="贷款类型" prop="region">
 				<el-select v-model="ruleForm.region" placeholder="请选择">
-					<el-option label="区域一" value="shanghai"></el-option>
-					<el-option label="区域二" value="beijing"></el-option>
+					<el-option label="个人信用" value="shanghai"></el-option>
 				</el-select>
 				<el-select v-model="ruleForm.region2" placeholder="请选择">
-					<el-option label="区域一" value="shanghai"></el-option>
-					<el-option label="区域二" value="beijing"></el-option>
+					<el-option label="信用" value="shanghai"></el-option>
 				</el-select>
 			</el-form-item>
 			<el-form-item label="上传文件" prop="uplota">

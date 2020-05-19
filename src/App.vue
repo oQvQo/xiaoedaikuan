@@ -12,7 +12,7 @@
           <span>全部分类</span>
           <img src="../public/img/xiaotuThree.png" />
         </div>
-        <div class="center-nav">
+        <div class="center-nav" id="center-nav">
           <ul>
             <li>
               <span>
@@ -38,12 +38,6 @@
                 <li>
                   <router-link to="/shouxinguanli">准入授信管理</router-link>
                 </li>
-
-
-
-
-
-                
               </ul>
             </li>
             <li>
@@ -95,39 +89,79 @@
               </ul>
             </li>
             <li>
-              <span>贷款管理</span>
+              <span>贷前管理</span>
               <img src="../public/img/xiaotuSeven.png" />
               <ul>
                 <li>
-                  <span>贷前管理-贷款申请管理</span>
-                  <img src="../public/img/xiaotuSeven.png" />
-                  <ul style="margin:0">
-                    <li>
-                      <router-link to="/weishouli">未受理</router-link>
-                    </li>
-                  </ul>
+                  <router-link to="/weishouli">未受理</router-link>
                 </li>
                 <li>
-                  <span>贷后管理</span>
-                  <img src="../public/img/xiaotuSeven.png" />
-                  <ul style="margin:0">
-                    <li>
-                      <router-link to="/daihoujiancha">贷后检查</router-link>
-                    </li>
-                    <li>
-                      <router-link to="/daikuanjiexiang">贷款结项</router-link>
-                    </li>
-                    <li>
-                      <router-link to="/lilvbiangeng">利率变更</router-link>
-                    </li>
-                    <li>
-                      <router-link to="/tiqianhuankuan">提前还款办理</router-link>
-                    </li>
-                    <li>
-                      <router-link to="/querenhuankuan">还款管理</router-link>
-                    </li>
-                  </ul>
+                  <router-link to="/shouxinguanlichakan">准入授信管理</router-link>
                 </li>
+              </ul>
+            </li>
+            <li>
+              <span>贷后管理</span>
+              <img src="../public/img/xiaotuSeven.png" />
+              <ul style="margin:0">
+                <li>
+                  <router-link to="/daihoujiancha">贷后检查</router-link>
+                </li>
+                <li>
+                  <router-link to="/daikuanjiexiang">贷款结项</router-link>
+                </li>
+                <li>
+                  <router-link to="/lilvbiangeng">利率变更</router-link>
+                </li>
+                <li>
+                  <router-link to="/tiqianhuankuanchakan">提前还款办理</router-link>
+                </li>
+                <li>
+                  <router-link to="/querenhuankuan">还款管理</router-link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span>贷中管理</span>
+              <img src="../public/img/xiaotuSeven.png" />
+              <ul style="margin:0">
+                <li>
+                  <router-link to="/daihoujiancha">贷后检查</router-link>
+                </li>
+                <li>
+                  <router-link to="/daikuanjiexiang">贷款结项</router-link>
+                </li>
+                <li>
+                  <router-link to="/lilvbiangeng">利率变更</router-link>
+                </li>
+                <li>
+                  <router-link to="/tiqianhuankuan">提前还款办理</router-link>
+                </li>
+                <li>
+                  <router-link to="/querenhuankuan">还款管理</router-link>
+                </li>
+              </ul>
+            </li>
+             <li>
+              <span>数据分析</span>
+              <img src="../public/img/xiaotuSeven.png" />
+              <ul style="margin:0">
+                <li>
+                  <router-link to="/one">贷款统计</router-link>
+                </li>
+                <li>
+                  <router-link to="/two">贷款产品分析</router-link>
+                </li>
+                <li>
+                  <router-link to="/three">放款笔数</router-link>
+                </li>
+                <li>
+                  <router-link to="/four">用户统计</router-link>
+                </li>
+                <li>
+                  <router-link to="/querenhuankuan">还款管理</router-link>
+                </li>
+                
               </ul>
             </li>
           </ul>
@@ -159,8 +193,22 @@
     </div>
   </div>
 </template>
+<script>
+// $(".center-nav li span").click(function(){
+//   var index =$(this).index;
+//   $(".center-nav li > ul >").show();
+//   $(".center-nav li > ul >").eq().hide();
+// });
+</script>
 
 <style>
+#center-nav ul li a{
+  color: #000;
+  text-decoration: none;
+}
+#center-nav ul li a:hover{
+  color: #f00;
+}
 .center-nav li > ul {
   margin: 10px 0px -19px 0px;
   padding: 0px;
@@ -238,7 +286,6 @@ body {
   overflow-y: scroll;
 }
 .left .bottom .center-nav > ul > li {
-
   border-bottom: 1px #f2f2f2 solid;
   background: url(../public/img/xiaotuTwo.png) no-repeat 40px 22px;
   padding: 17px 0px 17px 0px;
@@ -248,7 +295,7 @@ body {
 .left .bottom .center-nav > ul li > span {
   margin-left: 66px;
 }
-.left .bottom .center-nav > ul > li li span{
+.left .bottom .center-nav > ul > li li span {
   margin-left: 10px;
 }
 .left .bottom .center-nav > ul li img {
@@ -294,5 +341,8 @@ body {
 }
 .right .top ul li span {
   color: #999999;
+}
+.center-title ul li a {
+  color: black;
 }
 </style>

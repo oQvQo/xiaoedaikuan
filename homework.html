@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><title>homework</title></head>
+<body>
+    <input size="55" id="input" value="Prod_id,prod_Name,prod_dEsc">
+    <button onclick='conversion()'>转换</button>
+    <div id="output" style="width: 400px;border: 1px solid #ccc"></div>
+    <script>
+        function conversion() {
+            let outputArr = [] //存放结果
+            let arr = input.value.split(',')
+            arr.forEach((item, i) => {
+                let index = i + 1
+                let key = label = ''
+                let item_arr = item.split('_')
+                if(!item) return //防止结尾逗号,会新增一个空对象
+                item_arr.forEach((word, num) => {
+                    key += (num === 0) ? word.toLowerCase() : capitalize(word) //第一个单词首字母不大写
+                    label += capitalize(word) + ((num === 0) ? " " : "") //第一个单词结尾加空格
+                })
+                outputArr.push({ key, label, index })
+            })
+            // output.innerHTML = JSON.stringify(outputArr)
+            console.log(outputArr)
+        }
+        //首字母大写
+        const capitalize = str => str.toLowerCase().replace(/^[a-z]/, w => w.toUpperCase())
+
+    </script>
+</body>
+</html>

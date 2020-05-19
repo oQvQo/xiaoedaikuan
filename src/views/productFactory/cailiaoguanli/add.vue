@@ -1,3 +1,4 @@
+<!-- 新增贷款材料 -->
 <template>
   <div>
     <div class="toubu clear">
@@ -69,9 +70,7 @@
           </td>
         </tr>
       </table>
-      <div class="bottom">
-        <p>Copyright&copy;2018 深圳市xxxx金融科技有限公司，All Right Reserved</p>
-      </div>
+      <tabBar></tabBar>
     </div>
   </div>
 </template>
@@ -82,10 +81,6 @@
 <style scoped>
 body {
   background-color: #f0f0f0;
-}
-.bottom {
-  text-align: center;
-  font-size: 0.75rem;
 }
 .bor {
   border: 0.0625rem #ece9e9 solid;

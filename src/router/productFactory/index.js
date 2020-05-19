@@ -19,7 +19,7 @@ export default [
 		component:()=>import('../../views/productFactory/chanpinguanli/bianji')
 	},
 	{
-		path:'/addchanpin',
+		path:'/addchanpinguanli',
 		component:()=>import('../../views/productFactory/chanpinguanli/add')
 	},
 	//贷款产品审核
@@ -31,6 +31,10 @@ export default [
 	{
 		path:'/hetongmuban',
 		component:()=>import('../../views/productFactory/hetongmuban')
+	},
+	{
+		path:'/addhetongmuban',
+		component:()=>import('../../views/productFactory/hetongmuban/add')
 	},
 	//准入授信管理
 	{

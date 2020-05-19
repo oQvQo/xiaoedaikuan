@@ -6,13 +6,14 @@ import bankLiushuiRoter from './bankLiushui' //财务管理
 import productFactoryRoter from './productFactory' //产品工厂
 import loansRoter from './loans' //产品工厂
 import SystemManagement from './SystemManagement'//系统管理
-import EarlyWarning from './EarlyWarning'//贷后预警
+import EarlyWarning from './EarlyWarning'//贷后预警i
+import DataAnalysis from './DataAnalysis'//数据分析
 
 // 催收管理
 import Cjilu from '../views/Cuishoujilu.vue'
 import Daoqi from '../views/Daoqi.vue'
 import Yiyuqi from '../views/Yiyuqi.vue'
-// 系统权限
+// 系统权限x
 import Qxbumen from '../views/Qxbumen.vue'
 import Qxjuese from '../views/Qxjuese.vue'
 import Qxkefu from '../views/Qxkefu.vue'
@@ -80,6 +81,7 @@ const router = new VueRouter({
     ...loansRoter,
     ...SystemManagement,
     ...EarlyWarning,
+    ...DataAnalysis,
     { path: '/*', redirect: '/homePage' }
   ]
 })

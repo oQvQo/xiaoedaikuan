@@ -6,13 +6,6 @@ export default [
 	},
 	{
 		path:'/bankAccount',
-		component:()=>import('../../views/Finance/BankAccount'),
-		// children:[
-		// 	{
-		// 		path:'appEdit',
-		// 		component:()=>import('../../components/BankAccountAppEdit')
-		// 	}
-			
-		// ]
+		component:()=>import('../../views/Finance/BankAccount')
 	}
 ]

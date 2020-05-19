@@ -1,3 +1,4 @@
+<!-- 新增贷后预警 -->
 <template>
   <div>
     <el-form
@@ -88,6 +89,7 @@
         <el-button @click="resetForm('ruleForm')">返回</el-button>
       </el-form-item>
     </el-form>
+    <tabBar></tabBar>
   </div>
 </template>
 
