@@ -93,12 +93,10 @@
         <td>100</td>
         <td>2018-12-01</td>
         <td>
-          <template>
-             <a href>查看</a>
+          <a href>查看</a>
           <a href>编辑</a>
           <a href>禁用</a>
           <a href>删除</a>
-          </template>
         </td>
       </tr>
     </table>
