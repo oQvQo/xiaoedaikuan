@@ -23,10 +23,10 @@
         <td>0</td>
         <td>2018-12-01</td>
         <td>
-          <a href>查看</a>
-          <a href>编辑</a>
-          <a href>禁用</a>
-          <a href>删除</a>
+          <router-link>查看</router-link>
+          <router-link>编辑</router-link>
+          <router-link>禁用</router-link>
+          <router-link>删除</router-link>
         </td>
       </tr>
       <tr>
@@ -37,10 +37,10 @@
         <td>100</td>
         <td>2018-12-01</td>
         <td>
-          <a href>查看</a>
-          <a href>编辑</a>
-          <a href>禁用</a>
-          <a href>删除</a>
+          <router-link>查看</router-link>
+          <router-link>编辑</router-link>
+          <router-link>禁用</router-link>
+          <router-link>删除</router-link>
         </td>
       </tr>
       <tr>
@@ -51,10 +51,10 @@
         <td>100</td>
         <td>2018-12-01</td>
         <td>
-          <a href>查看</a>
-          <a href>编辑</a>
-          <a href>禁用</a>
-          <a href>删除</a>
+          <router-link>查看</router-link>
+          <router-link>编辑</router-link>
+          <router-link>禁用</router-link>
+          <router-link>删除</router-link>
         </td>
       </tr>
       <tr>
@@ -65,10 +65,11 @@
         <td>100</td>
         <td>2018-12-01</td>
         <td>
-          <a href>查看</a>
-          <a href>编辑</a>
-          <a href>禁用</a>
-          <a href>删除</a>
+          
+          <router-link>查看</router-link>
+          <router-link>编辑</router-link>
+          <router-link>禁用</router-link>
+          <router-link>删除</router-link>
         </td>
       </tr>
       <tr>
@@ -79,10 +80,10 @@
         <td>100</td>
         <td>2018-12-01</td>
         <td>
-          <a href>查看</a>
-          <a href>编辑</a>
-          <a href>禁用</a>
-          <a href>删除</a>
+          <router-link>查看</router-link>
+          <router-link>编辑</router-link>
+          <router-link>禁用</router-link>
+          <router-link>删除</router-link>
         </td>
       </tr>
       <tr>
@@ -93,10 +94,12 @@
         <td>100</td>
         <td>2018-12-01</td>
         <td>
-          <a href>查看</a>
-          <a href>编辑</a>
-          <a href>禁用</a>
-          <a href>删除</a>
+          <template>
+            <router-link>查看</router-link>
+            <router-link>编辑</router-link>
+            <router-link>禁用</router-link>
+            <router-link>删除</router-link>
+          </template>
         </td>
       </tr>
     </table>
