@@ -1,6 +1,6 @@
 <!-- 新增贷款材料 -->
 <template>
-  <div>
+  <div class="BigDiv">
     <div class="toubu clear">
       <span>新增贷款材料</span>
       <span @click="$router.go(-1)" style="cursor: pointer;">
@@ -88,6 +88,12 @@ body {
   margin: 0.3125rem;
   width: 9.375rem;
 }
+.BigDiv {
+		background: #f9f9f9;
+		width: 100%;
+		overflow: scroll;
+		height: 600px;
+	}
 tr > td {
   padding: 0.625rem;
 }

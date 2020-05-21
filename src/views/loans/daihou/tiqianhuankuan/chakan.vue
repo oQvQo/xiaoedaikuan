@@ -1,6 +1,6 @@
 <!-- 提前还款查看 -->
 <template>
-  <div>
+  <div class="BigDiv">
     <div class="zuo">提前还款</div>
     <div class="clear">
       <ul class="clear ul you">
@@ -579,4 +579,12 @@ export default {
   border-bottom: solid #cccccc 0.1rem;
   margin: 1rem 0 2rem 0;
 }
+.BigDiv {
+		background: #fff;
+		width: 100%;
+		overflow: scroll;
+		height: 600px;
+		position: absolute;
+	}
+
 </style>

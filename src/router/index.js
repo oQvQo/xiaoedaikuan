@@ -8,6 +8,7 @@ import loansRoter from './loans' //产品工厂
 import SystemManagement from './SystemManagement'//系统管理
 import EarlyWarning from './EarlyWarning'//贷后预警i
 import DataAnalysis from './DataAnalysis'//数据分析
+import login from './login' //登录
 
 // 催收管理
 import Cjilu from '../views/Cuishoujilu.vue'
@@ -82,6 +83,7 @@ const router = new VueRouter({
     ...SystemManagement,
     ...EarlyWarning,
     ...DataAnalysis,
+    ...login,
     { path: '/*', redirect: '/homePage' }
   ]
 })

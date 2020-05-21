@@ -1,6 +1,6 @@
 <!-- 合同模板 -->
 <template>
-  <div>
+  <div class="BigDiv">
     <el-input v-model="input" placeholder="合同编号" class="el-input"></el-input>
     <el-button type="info" @click="open">搜索</el-button>
     <el-button type="info">
@@ -24,7 +24,7 @@
         <el-table-column prop="address" label="操作" show-overflow-tooltip></el-table-column>
       </el-table>
 
-      <div class="block dw">
+      <div class="fy">
         <el-pagination
           @size-change="handleSizeChange"
           @current-change="handleCurrentChange"
@@ -92,4 +92,18 @@ export default {
 p{
     padding: 10px 10px 5px;
 }
+.BigDiv {
+		background: #fff;
+		width: 100%;
+		overflow: scroll;
+		height: 600px;
+		position: absolute;
+	}
+	.fy{
+		position: relative;
+		left: 520px;
+		top: 520px;
+		background-color: #fff;
+        float: left;
+	}
 </style>

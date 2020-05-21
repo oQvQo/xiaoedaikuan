@@ -1,6 +1,6 @@
 <!-- 授信管理查看 -->
 <template>
-  <div>
+  <div class="BigDiv">
     <el-menu
       :default-active="activeIndex"
       class="el-menu-demo"
@@ -13,7 +13,7 @@
       <el-menu-item index="4">聚信立</el-menu-item>
       <el-menu-item index="5">历史借款</el-menu-item>
     </el-menu>
-    <table width="70%">
+    <table width="80%">
       <tr>
         <th colspan="4">借款信息</th>
       </tr>
@@ -797,17 +797,15 @@ table>tr>td{
   padding: 10px;
 }
 .xd{
-   position:absolute; 
-/* }
-.jd{
-  position: relative;  */
-  right: 5px;
-  top: 150px;
+   position: absolute; 
+   right: -90px;
+   top: 100px;
 }
 .xd>ul{
   border: solid #cccccc 1px;
   padding: 25px;
   border-radius: 3px;
+  margin: 5px;
 }
 .xd>ul>li{
   text-align: center;
@@ -818,4 +816,11 @@ table>tr>td{
   padding: 20px 0;
   border: 0;
 }
+.BigDiv {
+		background: #fff;
+		width: 100%;
+		overflow: scroll;
+		height: 600px;
+		position: absolute;
+	}
 </style>

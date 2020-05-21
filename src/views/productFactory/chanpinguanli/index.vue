@@ -1,6 +1,6 @@
 <!-- 产品管理 -->
 <template>
-	<div>
+	<div class="BigDiv">
 		<el-select v-model="value" placeholder="贷款类型">
 			<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
 			</el-option>
@@ -18,7 +18,7 @@
 			</el-table-column>
 			<el-table-column prop="address" label="贷款类型">
 			</el-table-column>
-			<el-table-column prop="value11" label="标签">
+			<el-table-column prop="value11" label="标签" width="110">
 				<template slot-scope="scope">
 					<el-switch active-color="#333334" inactive-color="#d3d3d3"
 					inactive-text="新品:"
@@ -131,5 +131,10 @@
 </script>
 
 <style scoped>
-
+.BigDiv {
+		background: #f9f9f9;
+		width: 100%;
+		overflow: scroll;
+		height: 600px;
+	}
 </style>

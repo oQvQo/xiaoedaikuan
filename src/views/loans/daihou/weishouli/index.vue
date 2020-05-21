@@ -1,6 +1,6 @@
 <!-- 未受理 -->
 <template>
-  <div>
+  <div class="BigDiv">
     <el-input v-model="input" placeholder="姓名" class="el-input"></el-input>
     <el-input v-model="input" placeholder="手机号" class="el-input"></el-input>
     <el-select v-model="value" placeholder="请选择">
@@ -43,7 +43,7 @@
           </template>
         </el-table-column>
       </el-table>
-      <div class="block dw">
+      <div class="fy">
         <el-pagination
           @size-change="handleSizeChange"
           @current-change="handleCurrentChange"
@@ -173,16 +173,24 @@ export default {
 .el-input {
   width: 150px;
 }
-.dw {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 10px 20px;
-}
 .div {
   background-color: #cccccc;
 }
 p {
   padding: 10px 10px 5px;
 }
+.BigDiv {
+		background: #fff;
+		width: 100%;
+		overflow: scroll;
+		height: 600px;
+		position: absolute;
+	}
+	.fy{
+		position: relative;
+		left: 520px;
+		top: 20px;
+		background-color: #fff;
+    float: left;
+	}
 </style>

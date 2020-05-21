@@ -186,8 +186,7 @@
           </li>
         </ul>
       </div>
-
-      <keep-alive>
+      <keep-alive> 
         <router-view></router-view>
       </keep-alive>
     </div>
@@ -228,14 +227,13 @@
 
 body {
   margin: 0px;
-  overflow-x: hidden;
 }
 /* #app {
   height: 400px;
 } */
 .left {
   position: absolute;
-  width: 259px;
+  width: 16%;
   left: 0px;
   top: 0px;
   bottom: 0;
@@ -243,8 +241,9 @@ body {
   flex-direction: column;
 }
 .left .top {
+  width: 100%;
   background: #f2f2f2;
-  padding: 10px 15px;
+  padding: 10px 20px;
   height: 52px;
   box-sizing: border-box;
 }
@@ -255,18 +254,21 @@ body {
 }
 .left .top * {
   vertical-align: middle;
-  padding-left: 5px;
   white-space: nowrap;
   overflow: hidden;
 }
 .left .bottom {
   flex: 1;
+  width: 100%;
+  height: 500px;
+  overflow: scroll;
   display: flex;
   flex-direction: column;
 }
 .left .bottom .center-title {
+  width: 100%;
   border-bottom: 1px #e4e4e4 solid;
-  padding: 14px 1px 15px 19px;
+  padding: 14px 1px 15px 20px;
   font-size: 14px;
 }
 .left .bottom .center-title * {
@@ -282,18 +284,16 @@ body {
   list-style: none;
   padding: 0px;
   margin: 0px;
-  height: 555px;
-  overflow-y: scroll;
 }
 .left .bottom .center-nav > ul > li {
   border-bottom: 1px #f2f2f2 solid;
-  background: url(../public/img/xiaotuTwo.png) no-repeat 40px 22px;
+  background: url(../public/img/xiaotuTwo.png) no-repeat 20px 22px;
   padding: 17px 0px 17px 0px;
   cursor: pointer;
   font-size: 14px;
 }
 .left .bottom .center-nav > ul li > span {
-  margin-left: 66px;
+  margin-left: 40px;
 }
 .left .bottom .center-nav > ul > li li span {
   margin-left: 10px;
@@ -306,7 +306,7 @@ body {
   position: absolute;
   left: 270px;
   top: 0px;
-  width: 1277px;
+  width: 1088px;
   bottom: 0;
 }
 .right .top {

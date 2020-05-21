@@ -1,6 +1,6 @@
 <!-- 产品审核 -->
 <template>
-	<div>
+	<div class="BigDiv">
 		<el-select v-model="value" placeholder="贷款类型">
 			<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
 			</el-option>
@@ -30,7 +30,7 @@
 			<el-table-column prop="caozuo" label="操作" width="180">
 			</el-table-column>
 		</el-table>
-		<div class="block right">
+		<div class="fy">
 			<el-pagination
 				@size-change="handleSizeChange"
 				@current-change="handleCurrentChange"
@@ -41,6 +41,7 @@
 				:total="400">
 			</el-pagination>
 		</div>
+		<tabBar></tabBar>
 	</div>
 </template>
 
@@ -135,5 +136,18 @@
 </script>
 
 <style scoped>
-	
+	.BigDiv {
+		background: #fff;
+		width: 100%;
+		overflow: scroll;
+		height: 600px;
+		position: absolute;
+	}
+	.fy{
+		position: relative;
+		left: 520px;
+		top: 20px;
+		background-color: #fff;
+		    float: left;
+	}
 </style>

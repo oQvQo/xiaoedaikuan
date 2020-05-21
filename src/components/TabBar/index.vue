@@ -14,8 +14,10 @@
 <style scoped>
 	.gogo{
 		text-align: center;
-		height: 66px;
+		/* height: 66px; */
 		font-size: 14px;
 		color: #666666;
+		background-color: #fff;
+		padding: 50px;
 	}
 </style>

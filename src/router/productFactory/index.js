@@ -6,7 +6,7 @@ export default [
 		component:()=>import('../../views/productFactory/cailiaoguanli')
 	},
 	{
-		path:'/adddaikuancailiao',
+		path:'/addcailiaoguanli',
 		component:()=>import('../../views/productFactory/cailiaoguanli/add')
 	},
 	//贷款产品管理

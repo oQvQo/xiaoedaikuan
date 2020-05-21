@@ -23,8 +23,8 @@
         <td>0</td>
         <td>2018-12-01</td>
         <td>
-          <a href>查看</a>
-          <a href>编辑</a>
+          <a href="/addcailiaoguanli">查看</a>
+          <a href="/addcailiaoguanli">编辑</a>
           <a href>禁用</a>
           <a href>删除</a>
         </td>
@@ -37,8 +37,8 @@
         <td>100</td>
         <td>2018-12-01</td>
         <td>
-           <a href>查看</a>
-          <a href>编辑</a>
+          <a href="/addcailiaoguanli">查看</a>
+          <a href="/addcailiaoguanli">编辑</a>
           <a href>禁用</a>
           <a href>删除</a>
         </td>
@@ -51,8 +51,8 @@
         <td>100</td>
         <td>2018-12-01</td>
         <td>
-           <a href>查看</a>
-          <a href>编辑</a>
+          <a href="/addcailiaoguanli">查看</a>
+          <a href="/addcailiaoguanli">编辑</a>
           <a href>禁用</a>
           <a href>删除</a>
         </td>
@@ -65,8 +65,8 @@
         <td>100</td>
         <td>2018-12-01</td>
         <td>
-          <a href>查看</a>
-          <a href>编辑</a>
+          <a href="/addcailiaoguanli">查看</a>
+          <a href="/addcailiaoguanli">编辑</a>
           <a href>禁用</a>
           <a href>删除</a>
         </td>
@@ -79,8 +79,8 @@
         <td>100</td>
         <td>2018-12-01</td>
         <td>
-          <a href>查看</a>
-          <a href>编辑</a>
+          <a href="/addcailiaoguanli">查看</a>
+          <a href="/addcailiaoguanli">编辑</a>
           <a href>禁用</a>
           <a href>删除</a>
         </td>
@@ -93,13 +93,14 @@
         <td>100</td>
         <td>2018-12-01</td>
         <td>
-          <a href>查看</a>
-          <a href>编辑</a>
+          <a href="/addcailiaoguanli">查看</a>
+          <a href="/addcailiaoguanli">编辑</a>
           <a href>禁用</a>
           <a href>删除</a>
         </td>
       </tr>
     </table>
+    <tabBar></tabBar>
   </div>
 </template>
 
@@ -142,8 +143,8 @@ td > a {
   padding: 0.625rem;
   font-size: 0.875rem;
 }
-.clear{
-	display: flex;
-	justify-content: space-between;
+.clear {
+  display: flex;
+  justify-content: space-between;
 }
 </style>
